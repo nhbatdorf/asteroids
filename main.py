@@ -39,7 +39,7 @@ def main():
                 return
             for bullet in shots:
                 if object.col_dect(bullet):
-                    object.kill()
+                    object.split()
                     bullet.kill()
         screen.fill("black")
         for object in drawable:
